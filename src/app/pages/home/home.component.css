@@ -1,0 +1,70 @@
+.banner-fondo{
+    background-image: url(/assets/images/fondo.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.landing-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.landing-hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-center;
+    position: relative;
+    padding: 60px 30px 0;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    @media(min-width: 768px) { min-height: 100vh; }
+}
+
+.search-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.landing-hero-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 50px 30px 0;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    @media(min-width: 768px) { min-height: 100vh; }
+}
+
+.landing-hero-content .landing-logo {
+    max-width: 320px;
+    margin: 0 auto;
+    @media(max-width: 480px) { max-width: 240px; }
+}
+
+.landing-hero-title {
+    font-size: 2rem;
+    @media(max-width: 480px) { font-size: 3rem; }
+}
+
+.landing-hero-description { font-size: 15px; }
+
+
+.landing-hero-img {
+    padding: 5px;
+    margin: 5px auto;
+}
+
+.landing-hero-img img {
+    max-width: 320px;
+    @media(max-width: 480px) { max-width: 220px; }
+}

@@ -1,0 +1,37 @@
+<img style="width: 100%; height: 400px;" src="https://regcheq.com/hs-fs/hubfs/Recursos%20web/contactanos.png?width=2715&height=756&name=contactanos.png" alt="">
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <form [formGroup]="contactusForm">
+                <div formGroupName="persona">
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <input type="text" formControlName="apellido" placeholder="Apellido" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <input type="email" formControlName="correo" placeholder="Correo" class="form-control">
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <textarea formControlName="mensaje" placeholder="Mensaje" rows="3" class="form-control"></textarea>
+                </div>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <button (click)="__onSubmit()" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-8">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.118359642512!2d-76.9654806241517!3d-12.104048942971602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c70ab77498c1%3A0xcce9f50642e7c684!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas!5e0!3m2!1ses-419!2spe!4v1725415289584!5m2!1ses-419!2spe" width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="row">
+                <div class="col-12">
+                    <b>Télefono:</b> 99- 9484- 4955
+                </div>
+                <div class="col-12">
+                    <b>Dirección:</b> Monterrico
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
