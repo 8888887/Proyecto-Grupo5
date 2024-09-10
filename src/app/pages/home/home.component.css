@@ -4,7 +4,22 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.content-img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    margin: 30px 0px;
+}
 
+.block-tittle{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+.block-tittle h2 {
+    color: #024ab8;
+}
 .landing-hero-overlay {
     position: absolute;
     top: 0;
@@ -20,7 +35,7 @@
     flex-direction: column;
     justify-content: flex-center;
     position: relative;
-    padding: 60px 30px 0;
+    padding: 60px 30px 50px;
     z-index: 2;
     text-align: center;
     color: #fff;

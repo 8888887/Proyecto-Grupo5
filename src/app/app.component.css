@@ -20,5 +20,10 @@
     color: #000;
     text-align: center;
     padding: 10px 0px;
-    margin-top: 20px;
+    margin-top: 60px;
+}
+
+
+h1, h2, h3, h4, h5, h6,p, a,ul, li {
+    margin: 0px !important;
 }

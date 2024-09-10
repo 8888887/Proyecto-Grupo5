@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+h1, h2, h3, h4, h5, h6,p, a,ul, li {
+    margin: 0px !important;
+}
+
+ul, li{
+    text-transform: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.dis-flex{
+    display: flex;
+    align-items: center;
+}
+
+.dis-fle-btw{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
