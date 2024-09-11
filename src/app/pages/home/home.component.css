@@ -12,8 +12,22 @@
     margin: 30px 0px;
 }
 
+.back-sky{
+    background-color: #a4cce7;
+    padding: 40px 30px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.img-sponsor {
+    height: 160px;
+    max-width: 160px;
+    border-radius: 50%;
+}
+
 .block-tittle{
-    max-width: 500px;
+    max-width: 800px;
     margin: auto;
     text-align: center;
 }
@@ -82,4 +96,8 @@
 .landing-hero-img img {
     max-width: 320px;
     @media(max-width: 480px) { max-width: 220px; }
+}
+
+body > app-root > app-header > div > nav > ul > li > a {
+    color: #fff !important;
 }

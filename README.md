@@ -1,27 +1,41 @@
-# PC1
+# DECIDETUCANCHA.COM
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+Trabajo parcial presentado para el curso de **Desarrollo para Entorno Web (IS211)**  
+**Ingeniería de Sistemas EPE - UPC**  
+**Ciclo 2024-2**
 
-## Development server
+## Descripción del Proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**DECIDETUCANCHA.COM** es una plataforma web diseñada para facilitar la reserva de canchas deportivas. Permite a los usuarios ver la disponibilidad de las canchas, realizar reservas en línea, y gestionar los horarios de manera sencilla y rápida. El proyecto cuenta con un backend robusto en **C# .NET Core** y un frontend dinámico desarrollado con **Angular 18**.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Grupo 5 - Integrantes
 
-## Build
+| Alumno                          | Código       |
+|----------------------------------|--------------|
+| **César Rolando Cochachin Benites** | u20151A359   |
+| **Pierina Mariño Peralta**       | U20221B898   |
+| **Johann Moreno Padilla**        | U202121097   |
+| **Danny Huapaya Hinostroza**     | U20231E581   |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## Profesor
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Jaiver James Huiza Pereyra**
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Tecnologías Utilizadas
 
-## Further help
+- **Backend:** C# .NET Core
+- **Frontend:** Angular 18
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/8888887/Proyecto-Grupo5.git

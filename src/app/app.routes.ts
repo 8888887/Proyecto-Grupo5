@@ -1,10 +1,17 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { AboutusComponent } from './pages/aboutus/aboutus.component';
-import { ContactusComponent } from './pages/contactus/contactus.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { LoginComponent } from './seguridad/login/login.component';
+import { SearchComponent } from './pages/search/search.component';
+import { AboutComponent } from './pages/about/about.component';
+import { RegistrarComponent } from './seguridad/registrar/registrar.component';
 
 export const routes: Routes = [
+    {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: 'home', component: HomeComponent},
-    {path: 'aboutus', component: AboutusComponent},
-    {path: 'contactus', component: ContactusComponent}
+    {path: 'about', component: AboutComponent},
+    {path: 'registrar', component: RegistrarComponent},
+    {path: 'login', component: LoginComponent},
+    {path: 'search', component: SearchComponent},
+    {path: 'contact', component: ContactComponent},
 ];

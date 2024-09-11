@@ -1,0 +1,115 @@
+<section id="nosotros" class="container mb-5" style="margin-top: 120px; min-height: 350px;">
+    <div class="container py-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="h1 text-center mb-1">Búsqueda de Complejos Deportivos</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4">
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="sidebar">
+                <h4>Filtrar Búsqueda</h4>
+                <hr>
+                <form>
+                    <div class="form-group mb-3">
+                    <label for="tipoCancha">Tipo de Cancha</label>
+                    <select class="form-control" id="tipoCancha">
+                        <option>Fútbol</option>
+                        <option>Tenis</option>
+                        <option>Básquet</option>
+                        <option>Vóley</option>
+                    </select>
+                    </div>
+                    <div class="form-group mb-3">
+                    <label for="sede">Sede</label>
+                    <select class="form-control" id="sede">
+                        <option>Lima</option>
+                        <option>Arequipa</option>
+                        <option>Trujillo</option>
+                        <option>Chiclayo</option>
+                    </select>
+                    </div>
+                    <div class="form-group mb-3">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" class="form-control" id="fecha">
+                    </div>
+                    <div class="form-group mb-3">
+                    <label for="hora">Hora</label>
+                    <input type="time" class="form-control" id="hora">
+                    </div>
+                    <div class="form-group mb-3">
+                    <label for="precio">Rango de Precio</label>
+                    <input type="range" class="form-control-range" id="precio" min="10" max="500">
+                    </div>
+                    <div class="form-group">
+                    <button type="submit" class="btn btn-primary w-100">Aplicar Filtros</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        
+            <div class="col-md-9">
+                <div class="container mb-4">
+                <section class="search-form">
+                    <form class="row g-3" action="search">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Tipo de Cancha">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Sede">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="time" class="form-control">
+                    </div>
+                    <div class="col-md-1">
+                        <button type="submit" class="btn btn-primary">Buscar</button>
+                    </div>
+                    </form>
+                </section>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="../../../assets/images/cancha1.jpg" class="card-img-top" alt="Cancha de Fútbol">
+                    <div class="card-body">
+                        <h5 class="card-title">Cancha de Fútbol</h5>
+                        <p class="card-text">Sede: Lima, Precio: S/.100 por hora</p>
+                        <p class="card-text">Horario: 8:00 AM - 10:00 PM</p>
+                        <a href="#" class="btn btn-primary">Reservar</a>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="../../../assets/images/cancha2.jpg" class="card-img-top" alt="Cancha de Fútbol">
+                    <div class="card-body">
+                        <h5 class="card-title">Cancha de Fútbol</h5>
+                        <p class="card-text">Sede: Arequipa, Precio: S/.80 por hora</p>
+                        <p class="card-text">Horario: 7:00 AM - 9:00 PM</p>
+                        <a href="#" class="btn btn-primary">Reservar</a>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card h-100">
+                    <img src="../../../assets/images/cancha3.jpg" class="card-img-top" alt="Cancha de Fútbol">
+                    <div class="card-body">
+                        <h5 class="card-title">Cancha de Fútbol - Miraflores</h5>
+                        <p class="card-text">Sede: Miraflores, Precio: S/.60 por hora</p>
+                        <p class="card-text">Horario: 8:00 AM - 8:00 PM</p>
+                        <a href="#" class="btn btn-primary">Reservar</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

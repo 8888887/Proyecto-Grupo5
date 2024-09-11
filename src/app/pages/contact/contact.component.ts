@@ -3,34 +3,35 @@ import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-contactus',
+  selector: 'app-contact',
   standalone: true,
   imports: [ReactiveFormsModule, JsonPipe],
-  templateUrl: './contactus.component.html',
-  styleUrl: './contactus.component.css'
+  templateUrl: './contact.component.html',
+  styleUrl: './contact.component.css'
 })
-export class ContactusComponent {
+
+export class ContactComponent {
 
   constructor(
     private fb: FormBuilder
-  ){}
+  ) {}
 
   contactusForm = this.fb.group({
     persona: this.fb.group({
-      nombre: ["", Validators.required],
-      apellido: ["", Validators.required]
+      nombre: ["", [Validators.required, Validators.minLength(4)]],
+      apellido: [""]
     }),
     correo: ["", [Validators.required, Validators.email]],
     mensaje: [""]
-  })
-  
+  });
 
-  __onSubmit(){
-    if (this.contactusForm.valid){
-      console.log(this.contactusForm.value);
+  __onSubmit() {
+    if(this.contactusForm.valid)
+    {
+      console.log(this.contactusForm.value)
     }
     else {
-      alert("Formulario no valido")
+      console.error("Formulario no valido")
     }
   }
 }
