@@ -1,0 +1,22 @@
+
+.box-left{
+    border: 1px solid #ebebeb;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: -3px 4px 4px -2px rgb(0 0 0 / 10%);
+}
+
+.txt-labl{
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #0c0f18;
+}
+
+.btn-reservar{
+    margin-top: 14px !important;
+}
+
+.card-text strong {
+    font-size: 14px;
+}

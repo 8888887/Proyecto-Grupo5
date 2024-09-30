@@ -1,10 +1,25 @@
 .head-top {
-    display: flex;
-    position: absolute;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     left: 0;
     right: 0;
     top: 0;
+    background-color: #283593;
+    border-radius: 0px 0px 20px 20px;
+}
+.head-top .dis-fle-btw .nav-pills {
+    align-items: center !important;
+}
+.nav-item .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.btn-register{
+    background-color: #028484;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-weight: 500;
 }
