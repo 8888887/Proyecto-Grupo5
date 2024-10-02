@@ -75,20 +75,18 @@
                 </section>
                 </div>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                    <img src="../../../assets/images/cancha1.jpg" class="card-img-top" alt="Cancha de Fútbol">
-                    <div class="card-body">
-                        <h5 class="card-title">Futbol 11 - Surco</h5>
-                        <p class="card-text"><strong>Sede:</strong> Lima,</p>
-                        <p class="card-text"><strong>Precio:</strong> S/.100 por hora</p>
-                        <p class="card-text"><strong>Horario:</strong> 8:00 AM - 10:00 PM</p>
-                        <a href="#" class="btn btn-primary btn-reservar">Reservar</a>
+                    <div class="col" *ngFor="let complejo of complejos">
+                        <div class="card h-100">
+                        <img src="{{ complejo.urlImagen }}" class="card-img-top" alt="Cancha de Fútbol">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ complejo.nombre }}</h5>
+                            <p class="card-text"><strong>Dirección:</strong> {{ complejo.direccion }}</p>
+                            <a href="#" class="btn btn-primary btn-reservar">Reservar</a>
+                        </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
         
-                <div class="col">
+                <!-- <div class="col">
                     <div class="card h-100">
                     <img src="../../../assets/images/cancha2.jpg" class="card-img-top" alt="Cancha de Fútbol">
                     <div class="card-body">
@@ -99,8 +97,8 @@
                         <a href="#" class="btn btn-primary btn-reservar">Reservar</a>
                     </div>
                     </div>
-                </div>
-        
+                </div> -->
+<!--         
                 <div class="col">
                     <div class="card h-100">
                     <img src="../../../assets/images/cancha3.jpg" class="card-img-top" alt="Cancha de Fútbol">
@@ -112,7 +110,7 @@
                         <a href="#" class="btn btn-primary btn-reservar">Reservar</a>
                     </div>
                     </div>
-                </div>
+                </div> -->
                 </div>
             </div>
         </div>
