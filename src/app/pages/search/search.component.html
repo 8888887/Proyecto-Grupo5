@@ -1,5 +1,5 @@
 <section id="nosotros" class="mb-5" style="margin-top: 36px; min-height: 350px;">
-    <img src="../../../assets/images/banner-home/cancha-deportiva.jpg" alt="" style="width: 100%;">
+    <img src="../../../assets/images/banner-home/cancha-deportiva.jpg" alt="" style="width: 100%; height: 350px;">
     <div class="container py-4">
         <div class="row mb-4">
             <div class="col-12">
@@ -75,13 +75,18 @@
                 </section>
                 </div>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col" *ngFor="let complejo of complejos">
+                    <div class="col" *ngFor="let canchafull of canchasfull">
                         <div class="card h-100">
-                        <img src="{{ complejo.urlImagen }}" class="card-img-top" alt="Cancha de Fútbol">
+                        <img src="{{ canchafull.urlImagen }}" class="card-img-top" alt="Cancha de Fútbol">
                         <div class="card-body">
-                            <h5 class="card-title">{{ complejo.nombre }}</h5>
-                            <p class="card-text"><strong>Dirección:</strong> {{ complejo.direccion }}</p>
-                            <a href="#" class="btn btn-primary btn-reservar">Reservar</a>
+                            <h5 class="card-title">{{ canchafull.nombreComplejo }}</h5>
+                            <p class="card-text"><strong>Sede:</strong> {{ canchafull.nombreSede }}</p>
+                            <p class="card-text"><strong>Tipo de Cancha:</strong> {{ canchafull.tipoCancha }}</p>
+                            <p class="card-text"><strong>Precios Desde:</strong> {{ canchafull.precioCancha }}</p>
+
+                            <button class="btn btn-primary" (click)="btnReservar_Click(canchafull.idCancha)">
+                                Reservar
+                            </button>
                         </div>
                         </div>
                     </div>

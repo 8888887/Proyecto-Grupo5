@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Importar CommonModule
-import { ComplejosService } from '../../services/complejo.service';
-import { ComplejoModel } from '../../models/complejo-model';
+import { CommonModule } from '@angular/common';
+import { CanchaFullModel, CanchaModel } from '../../models/cancha-model';
+import { CanchaService } from '../../services/cancha.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -12,14 +13,20 @@ import { ComplejoModel } from '../../models/complejo-model';
 })
 export class SearchComponent implements OnInit {
 
-  complejos: ComplejoModel[] = [];
+  canchasfull: CanchaFullModel[] = [];
+  id_cancha_selected: number = 0;
 
-  constructor(private complejosService: ComplejosService) {}
+  constructor(private canchaService: CanchaService, private router: Router) {}
 
   ngOnInit(): void {
-    this.complejosService.listarComplejos().subscribe((result: any) => {
+    this.canchaService.listarCanchasFull().subscribe((result: any) => {
       console.log(result.data);
-      this.complejos = result.data;
+      this.canchasfull = result.data;
     });
   }  
+
+  btnReservar_Click(id_cancha:number){
+    this.router.navigateByUrl('pages/reservar/'+id_cancha)
+  }
+
 }

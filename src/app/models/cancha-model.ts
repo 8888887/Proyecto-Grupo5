@@ -9,3 +9,14 @@ export interface CanchaModel {
     fechaCrea: Date;
     fechaModifica: Date;
 }
+
+export interface CanchaFullModel {
+    idComplejo: number;
+    nombreComplejo: string;
+    nombreSede: string;
+    idCancha: number;
+    nombreCancha: string;
+    precioCancha: number;
+    tipoCancha: string;
+    urlImagen: string;
+}
